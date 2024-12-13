@@ -1,0 +1,151 @@
+html{
+    font-size: var(--overall-font-size);
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.red-social-head {
+    display: flex;
+}
+.red-social-home{
+    background-color: black;
+    color: white;
+}
+.red-social-top{
+    color: white;
+}
+.top-menu-nav {
+    display: flex;
+    flex-direction: row;
+}
+.top-menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.peludos-home{
+    background-color: #F8F8F8;
+}
+.subtitulo-home{
+    font-size: 1rem;
+    color: #E36B20;
+}
+.btn-home{
+    color: white;
+    background-color: #E36B20;
+    border: none;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+}
+
+.los-eventos{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.card-evento-home{
+    display: flex;
+    border-radius: .4rem;
+    height: 13.9rem;
+    box-sizing: border-box;
+}
+.card-image-home{
+    flex: 0 0 17.7rem;
+}
+.evento-imagen-home{
+    max-width: 17.7rem;
+    max-height: 13.9rem;
+    width: 100%;
+    border-radius: .4rem 0 0 .4rem;
+    object-fit: cover;
+    height: 100%;
+}
+.historia-home{
+    background-color: #F8F8F8;
+}
+.form-home{
+    background-color: #F8F8F8;
+}
+
+.container {
+    /**border: 2px dotted blue;**/
+    max-width: 96vw;
+    margin: 0 auto;
+    padding: 0 0.8rem;
+    box-sizing: border-box;    
+}
+
+/** 567px --> 767px */
+@media ( min-width: 567px ){
+    .container {
+        max-width: 54rem;
+        padding: 0 1.6rem;
+    }
+}
+
+/** 768px --> 1023px */
+@media ( min-width: 768px ){
+    .container {
+        max-width: 72rem;
+        padding: 0 2.4rem;
+    }
+}
+
+/** 1024px --> 1999px */
+@media ( min-width: 1024px ){
+    .container {
+        max-width: 99.2rem;
+        padding: 0 3.2rem;
+    }
+}
+
+/** 1200px --> 1399px */
+@media ( min-width: 1200px ){
+    .container {
+        max-width: 114rem;
+        padding: 0 4rem;
+    }
+}
+
+/** 1400px --> 1599px */
+@media ( min-width: 1400px ){
+    .container {
+        max-width: 132rem;
+        padding: 0 4.8rem;
+    }
+}
+
+/** 1600px --> 1919px */
+@media ( min-width: 1600px ){
+    .container {
+        max-width: 144rem;
+        padding: 0 5.6rem;
+    }
+}
+
+/** 1920px --> 2159px */
+@media ( min-width: 1920px ){
+    .container {
+        max-width: 160rem;
+        padding: 0 6.4rem;
+    }
+}
+
+/** 2160px --> 2459px */
+@media ( min-width: 2160px ){
+    .container {
+        max-width: 176rem;
+        padding: 0 7.2rem;
+    }
+}
+
+/** 2160px --> more */
+@media ( min-width: 2560px ){
+    .container {
+        max-width: 192rem;
+        padding: 0 8rem;
+    }
+}
