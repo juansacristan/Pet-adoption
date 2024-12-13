@@ -5,25 +5,34 @@ html{
 body{
     font-family: "Montserrat", sans-serif;
 }
-
-.red-social-head {
-    display: flex;
-}
 .red-social-home{
     background-color: black;
     color: white;
+    display: flex;
+    height: 1.5rem;
 }
+
+.red-social-head {
+    padding: 0.2rem 0.6rem;
+}
+
 .red-social-top{
     color: white;
 }
 .top-menu-nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9D9D9;
 }
+
 .top-menu{
     list-style: none;
     display: flex;
     flex-direction: row;
+}
+.form-nav {
+    padding: 1rem;
 }
 .peludos-home{
     background-color: #F8F8F8;
@@ -46,6 +55,14 @@ body{
     gap: 2.4rem;
 }
 
+.subtitulo-home {
+    font-size: 0.8rem;
+    color: #E36B20;
+    padding: 5rem 0 0 0;
+}
+.titulo-home {
+    font-size: 2rem;
+}
 .card-evento-home{
     display: flex;
     border-radius: .4rem;
