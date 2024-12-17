@@ -5,6 +5,9 @@ html{
 body{
     font-family: "Montserrat", sans-serif;
 }
+h2{
+    font-size: 2.2rem;
+}
 .red-social-home{
     background-color: black;
     color: white;
@@ -30,6 +33,7 @@ body{
     list-style: none;
     display: flex;
     flex-direction: row;
+    gap: 1rem;
 }
 .form-nav {
     padding: 1rem;
@@ -47,19 +51,30 @@ body{
     border: none;
     padding: 0.7rem 1rem;
     font-size: 1rem;
+    border-radius: 0.5rem;
 }
-
-.los-eventos{
+.eventos-home {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0rem;
+    gap: 2rem;
+    width: 55rem;
+}
+.los-eventos{
+    display: flex;
+    flex-direction: row;
+    gap: 7.4rem;
+    padding: 5rem 0;
+    justify-content: center;
+}
+.necesitas-home {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.subtitulo-home {
-    font-size: 0.8rem;
-    color: #E36B20;
-    padding: 5rem 0 0 0;
-}
 .titulo-home {
     font-size: 2rem;
 }
@@ -68,7 +83,25 @@ body{
     border-radius: .4rem;
     height: 13.9rem;
     box-sizing: border-box;
+    gap: 1rem;
+    border: 2px solid #E36B20;
+    padding: 1rem;
 }
+.card-fecha-evento {
+    font-size: 0.8rem;
+    color: #E36B20;
+    margin: 0.5rem 0 0 0;
+}
+.card-nombre-evento {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+}
+.descripcion-evento {
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
+
 .card-image-home{
     flex: 0 0 17.7rem;
 }
@@ -76,12 +109,26 @@ body{
     max-width: 17.7rem;
     max-height: 13.9rem;
     width: 100%;
-    border-radius: .4rem 0 0 .4rem;
+    border-radius: 0.4rem;
     object-fit: cover;
     height: 100%;
 }
 .historia-home{
     background-color: #F8F8F8;
+}
+.historia-peludo-home{
+    
+}
+.card-historia-image{
+    flex: 0 0 17.7rem;
+}
+.image-historia{
+    max-width: 17.7rem;
+    max-height: 13.9rem;
+    width: 100%;
+    border-radius: 0.4rem;
+    object-fit: cover;
+    height: 100%;
 }
 .form-home{
     background-color: #F8F8F8;
