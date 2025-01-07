@@ -24,6 +24,12 @@ h4 {
 a {
     text-decoration: none;
 }
+.footer {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
 
 .menu-social {
     list-style: none;
@@ -58,6 +64,7 @@ a {
     padding: 0;
     display: flex;
     gap: 1.5rem;
+    align-items: center;
 
     .menu-link {
         color: black;
@@ -69,10 +76,16 @@ a {
     }
 }
 
+.logo-home {
+    max-height: 100%;
+    height: 5rem;
+}
+
 .menu-usuario {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 0 2rem 0;
 
     .menu-usuario-form {
         display: flex;
@@ -97,6 +110,7 @@ a {
     gap: 1rem;
 }
 
+
 .peludos-home {
     background-color: #F8F8F8;
     display: flex;
@@ -120,6 +134,11 @@ a {
         color: #E36B20;
         margin: 0;
     }
+}
+.img-peludo-home {
+    background-color: #E36B20;
+    padding: 8.4rem 10rem 3rem 10rem;
+    border-radius: 0 0 20rem 20rem;
 }
 
 
@@ -315,6 +334,12 @@ img.nosotros-img {
     max-height: 100%;
     height: 35rem;
 }
+.quienes-somos-image {
+    background-color: #E36B20;
+    padding: 3rem 12rem;
+    border-radius: 0 0 28rem 28rem;
+    margin: -83px 0 0 0;
+}
 
 .quienes-somos-informacion {
     height: 23rem;
@@ -344,15 +369,29 @@ img.nosotros-img {
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    padding: 2rem 10rem;
-    margin: 4rem 5rem 05rem;
+    max-width: 100%;
+    width: 27rem;
+    padding: 2rem 7rem;
+    margin: 0 0 5rem;
     border-radius: 3rem;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.08);
 }
 
 .img-form-home {
     max-height: 100%;
-    height: 38rem;
+    height: 27rem;
+}
+
+.nombre-form-home,
+.apellido-form-home,
+.email-form-home,
+.asunto-form-home,
+.mensaje {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    border-radius: 1.6rem;
+    border: 1px solid #D4D4D4;
+    padding: 0.6rem;
 }
 
 .btn-form {
@@ -364,12 +403,69 @@ img.nosotros-img {
     border-radius: 0.5rem;
     text-decoration: none;
     font-weight: bold;
+    font-family: "Montserrat", sans-serif;
 
 }
 
 .form-imagen {
     max-height: 100%;
-    border-radius: 25rem 0 0 25rem;
+    border-radius: 0 0 25rem 25rem;
+}
+
+.footer-enlaces {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-lista {
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-footer {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.logo-footer {
+    max-height: 100%;
+    height: 5rem;
+}
+
+.footer-link {
+    color: white;
+}
+
+.footer-titulo {
+    font-weight: bold;
+}
+
+.menu-social-footer {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.social-footer {
+    margin: 0 0 4rem 0;
+}
+
+.red-social-footer {
+    background-color: white;
+    color: #E36B20;
+    padding: 0.8rem 1rem;
+    border-radius: 5rem;
 }
 
 .copyright {
@@ -385,6 +481,7 @@ img.nosotros-img {
     max-width: 100%;
     width: 31rem;
     text-align: center;
+    font-weight: normal;
 }
 
 
@@ -413,12 +510,21 @@ img.nosotros-img {
         padding: 0 1.6rem;
     }
 
+    .menu-usuario {
+        margin: 0;
+    }
+
     .peludos-home {
         .peludos-enlace {
             flex-direction: row;
             gap: 3rem;
             height: 30rem;
         }
+    }
+    .img-peludo-home {
+        background-color: #E36B20;
+        padding: 4.5rem 15rem 4.5rem 5rem;
+        border-radius: 15rem 0 0 15rem;
     }
 
     .eventos-home {
@@ -436,8 +542,14 @@ img.nosotros-img {
         .quienes-somos {
             flex-direction: row;
             height: 45rem;
-            width: 90rem;
+            width: 110rem;
         }
+    }
+    .quienes-somos-image {
+        background-color: #E36B20;
+        padding: 3rem 12rem;
+        border-radius: 0 23rem 23rem 0;
+        margin: 0;
     }
 
     img.nosotros-img {
@@ -446,7 +558,7 @@ img.nosotros-img {
     }
 
     .formulario {
-        margin: 00rem 0 39rem;
+        margin: 4rem 0 5rem;
 
     }
 
@@ -456,6 +568,29 @@ img.nosotros-img {
 
     .img-form-home {
         height: 50rem;
+    }
+
+    .form-imagen {
+        border-radius: 25rem 0 0 25rem;
+    }
+
+    .footer-lista {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 7rem;
+        padding: 3rem 0;
+        margin: 0;
+    }
+    .footer-enlaces {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .social-footer{
+        margin: 0;
+    }
+    .copy-footer{
+        width: 100vw;
     }
 }
 
